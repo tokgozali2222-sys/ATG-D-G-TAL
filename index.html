@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="ATG DIGITAL. Sosyal medya, tasarım, video ve reklam kreatifleri.">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta
+        name="description"
+        content="ATG DIGITAL. Sosyal medya, tasarım, video ve reklam kreatifleri."
+    >
+
+    <meta name="theme-color" content="#050505">
 
     <title>ATG DIGITAL | Creative Studio</title>
 
@@ -14,61 +18,131 @@
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="site-header" id="site-header">
 
-        <a href="index.html" class="brand" aria-label="ATG DIGITAL ana sayfa">
-            ATG<span>.</span>
-        </a>
+        <div class="header-inner">
 
-        <nav class="main-nav" id="main-nav">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="pages/hizmetler.html">Hizmetler</a>
-            <a href="pages/calismalar.html">Çalışmalar</a>
-            <a href="pages/hakkimizda.html">Hakkımızda</a>
-            <a href="pages/iletisim.html">İletişim</a>
-        </nav>
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="ATG DIGITAL ana sayfa"
+            >
+                <img
+                    src="assets/atg-logo-cropped.png"
+                    alt="ATG Digital"
+                    style="width:58px;height:58px;object-fit:contain;"
+                >
+            </a>
 
-        <a href="pages/iletisim.html" class="header-cta">
-            Projeni Anlat
-        </a>
+            <nav class="site-nav" aria-label="Ana navigasyon">
 
-        <button class="menu-toggle"
+                <a href="index.html">Ana Sayfa</a>
+
+                <a href="pages/hizmetler.html">
+                    Hizmetler
+                </a>
+
+                <a href="pages/calismalar.html">
+                    Çalışmalar
+                </a>
+
+                <a href="pages/hakkimizda.html">
+                    Hakkımızda
+                </a>
+
+                <a href="pages/iletisim.html">
+                    İletişim
+                </a>
+
+            </nav>
+
+            <a
+                href="pages/iletisim.html"
+                class="hero-actions"
+                style="margin:0;"
+            >
+                <span
+                    style="
+                        display:inline-flex;
+                        align-items:center;
+                        justify-content:center;
+                        min-height:48px;
+                        padding:0 22px;
+                        border:1px solid var(--gold);
+                        color:#080808;
+                        background:linear-gradient(135deg,var(--gold-light),var(--gold));
+                        font-size:10px;
+                        font-weight:800;
+                        letter-spacing:.16em;
+                        text-transform:uppercase;
+                    "
+                >
+                    Projeni Anlat
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
                 id="menu-toggle"
                 aria-label="Menüyü aç"
                 aria-expanded="false"
-                type="button">
-            <span></span>
-            <span></span>
-        </button>
+                type="button"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
 
     </header>
 
 
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+
+        <nav>
+
+            <a href="index.html">
+                Ana Sayfa
+            </a>
+
+            <a href="pages/hizmetler.html">
+                Hizmetler
+            </a>
+
+            <a href="pages/calismalar.html">
+                Çalışmalar
+            </a>
+
+            <a href="pages/hakkimizda.html">
+                Hakkımızda
+            </a>
+
+            <a href="pages/iletisim.html">
+                İletişim
+            </a>
+
+        </nav>
+
+    </div>
+
+
     <main>
 
-        <!-- =========================
-             HERO
-        ========================== -->
-
+        <!-- HERO -->
         <section class="hero" id="hero">
 
-            <div class="hero-background">
-                <div class="hero-grid"></div>
-                <div class="hero-glow"></div>
-            </div>
+            <div class="hero-inner">
 
-            <div class="hero-content">
-
-                <p class="eyebrow">ATG DIGITAL / CREATIVE STUDIO</p>
+                <p class="hero-eyebrow">
+                    ATG DIGITAL / CREATIVE STUDIO
+                </p>
 
                 <h1>
                     Markaların
                     <span>görünür yüzünü</span>
-                    tasarlıyoruz.
+                    <span>tasarlıyoruz.</span>
                 </h1>
 
                 <p class="hero-description">
@@ -77,304 +151,404 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="pages/calismalar.html" class="button button-primary">
+
+                    <a href="pages/calismalar.html">
                         Çalışmaları Gör
                     </a>
 
-                    <a href="pages/iletisim.html" class="button button-secondary">
+                    <a
+                        href="pages/iletisim.html"
+                        class="secondary"
+                    >
                         Projeni Anlat
                     </a>
+
                 </div>
 
             </div>
 
-            <div class="hero-bottom">
 
-                <span>SCROLL TO EXPLORE</span>
+            <!-- Hero Logo Visual -->
+            <div
+                aria-hidden="true"
+                style="
+                    position:absolute;
+                    right:clamp(20px,8vw,130px);
+                    top:50%;
+                    transform:translateY(-50%);
+                    width:clamp(220px,32vw,520px);
+                    height:clamp(220px,32vw,520px);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    opacity:.20;
+                    pointer-events:none;
+                "
+            >
 
-                <span class="scroll-line"></span>
+                <div
+                    style="
+                        position:absolute;
+                        inset:0;
+                        border:1px solid rgba(214,173,69,.35);
+                        border-radius:50%;
+                    "
+                ></div>
 
-                <span>01 / 09</span>
+                <div
+                    style="
+                        position:absolute;
+                        inset:9%;
+                        border:1px solid rgba(214,173,69,.16);
+                        border-radius:50%;
+                    "
+                ></div>
+
+                <img
+                    src="assets/atg-logo-cropped.png"
+                    alt=""
+                    style="
+                        width:72%;
+                        height:72%;
+                        object-fit:contain;
+                        filter:drop-shadow(0 0 40px rgba(214,173,69,.28));
+                    "
+                >
+
+            </div>
+
+
+            <div class="hero-meta">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <span>
+                    ATG DIGITAL
+                </span>
+
+                <span>
+                    01 / 09
+                </span>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             INTRO
-        ========================== -->
+        <!-- INTRO -->
+        <section class="intro" id="intro">
 
-        <section class="intro section" id="intro">
+            <div class="intro-inner">
 
-            <div class="section-label">
-                <span>01</span>
-                <span>ATG DIGITAL</span>
-            </div>
+                <div class="intro-label">
+                    01 / ATG DIGITAL
+                </div>
 
-            <div class="intro-content">
+                <div>
 
-                <h2>
-                    Sadece içerik değil,
-                    <span>bir görünüm</span>
-                    oluşturuyoruz.
-                </h2>
+                    <h2>
+                        Sadece içerik değil,
+                        <span>bir görünüm</span>
+                        oluşturuyoruz.
+                    </h2>
 
-                <p>
-                    ATG DIGITAL; markaların sosyal medyada, dijital
-                    platformlarda ve reklam çalışmalarında nasıl
-                    göründüğünü tasarlayan yaratıcı bir stüdyodur.
-                </p>
+                    <p
+                        style="
+                            max-width:680px;
+                            margin:35px 0 0;
+                            color:var(--gray);
+                            font-size:17px;
+                            line-height:1.8;
+                        "
+                    >
+                        ATG DIGITAL; markaların sosyal medyada,
+                        dijital platformlarda ve reklam çalışmalarında
+                        nasıl göründüğünü tasarlayan yaratıcı bir stüdyodur.
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SERVICES
-        ========================== -->
+        <!-- SERVICES -->
+        <section class="services" id="services">
 
-        <section class="services section" id="services">
+            <div class="services-inner">
 
-            <div class="section-heading">
+                <div class="section-heading">
 
-                <div class="section-label">
-                    <span>02</span>
-                    <span>HİZMETLER</span>
+                    <div>
+                        <span
+                            style="
+                                display:block;
+                                margin-bottom:18px;
+                                color:var(--gold-light);
+                                font-size:10px;
+                                font-weight:700;
+                                letter-spacing:.22em;
+                            "
+                        >
+                            02 / HİZMETLER
+                        </span>
+
+                        <h2>
+                            Markanız için
+                            <br>
+                            <span>ne yapabiliriz?</span>
+                        </h2>
+                    </div>
+
+                    <span>
+                        WHAT WE DO
+                    </span>
+
                 </div>
 
-                <h2>
-                    Markanız için
-                    <span>ne yapabiliriz?</span>
-                </h2>
 
-            </div>
+                <div class="services-grid">
 
+                    <!-- 01 -->
+                    <a
+                        href="pages/hizmet-sosyal-medya.html"
+                        class="service-card"
+                    >
 
-            <div class="services-list">
+                        <span class="service-number">
+                            01
+                        </span>
 
-                <a href="pages/sosyal-medya.html" class="service-item">
-                    <span class="service-number">01</span>
+                        <h3>
+                            Sosyal Medya
+                        </h3>
 
-                    <div class="service-info">
-                        <h3>Sosyal Medya</h3>
                         <p>
                             Gönderi, story, reels ve sosyal medya
                             içerik üretimi.
                         </p>
-                    </div>
 
-                    <span class="service-arrow">↗</span>
-                </a>
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
 
 
-                <a href="pages/tasarim.html" class="service-item">
-                    <span class="service-number">02</span>
+                    <!-- 02 -->
+                    <a
+                        href="pages/hizmet-tasarim.html"
+                        class="service-card"
+                    >
 
-                    <div class="service-info">
-                        <h3>Tasarım</h3>
+                        <span class="service-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Tasarım
+                        </h3>
+
                         <p>
-                            Afiş, menü, katalog, banner ve kampanya
-                            görselleri.
+                            Afiş, menü, katalog, banner ve
+                            kampanya görselleri.
                         </p>
-                    </div>
 
-                    <span class="service-arrow">↗</span>
-                </a>
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
 
 
-                <a href="pages/video-reels.html" class="service-item">
-                    <span class="service-number">03</span>
+                    <!-- 03 -->
+                    <a
+                        href="pages/hizmet-video-reels.html"
+                        class="service-card"
+                    >
 
-                    <div class="service-info">
-                        <h3>Video & Reels</h3>
+                        <span class="service-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Video & Reels
+                        </h3>
+
                         <p>
                             Reels, kısa format videolar ve işletme,
                             ürün veya hizmet tanıtımları.
                         </p>
-                    </div>
 
-                    <span class="service-arrow">↗</span>
-                </a>
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
 
 
-                <a href="pages/reklam-kreatifleri.html" class="service-item">
-                    <span class="service-number">04</span>
+                    <!-- 04 -->
+                    <a
+                        href="pages/hizmet-reklam-kreatifleri.html"
+                        class="service-card"
+                    >
 
-                    <div class="service-info">
-                        <h3>Reklam Kreatifleri</h3>
+                        <span class="service-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Reklam Kreatifleri
+                        </h3>
+
                         <p>
                             Sosyal medya reklam görselleri,
                             reklam videoları ve kampanya kreatifleri.
                         </p>
-                    </div>
 
-                    <span class="service-arrow">↗</span>
-                </a>
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SELECTED WORKS
-        ========================== -->
+        <!-- PORTFOLIO -->
+        <section class="portfolio" id="works">
 
-        <section class="works section" id="works">
+            <div class="portfolio-inner">
 
-            <div class="section-heading works-heading">
+                <div class="section-heading">
 
-                <div class="section-label">
-                    <span>03</span>
-                    <span>SEÇİLMİŞ ÇALIŞMALAR</span>
-                </div>
+                    <div>
 
-                <div class="heading-row">
-                    <h2>
-                        Ürettiklerimiz
-                        <span>konuşsun.</span>
-                    </h2>
+                        <span
+                            style="
+                                display:block;
+                                margin-bottom:18px;
+                                color:var(--gold-light);
+                                font-size:10px;
+                                font-weight:700;
+                                letter-spacing:.22em;
+                            "
+                        >
+                            03 / SEÇİLMİŞ ÇALIŞMALAR
+                        </span>
 
-                    <a href="pages/calismalar.html" class="text-link">
+                        <h2>
+                            Ürettiklerimiz
+                            <br>
+                            <span>konuşsun.</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="pages/calismalar.html"
+                        style="
+                            color:var(--gold-light);
+                            font-size:11px;
+                            font-weight:700;
+                            letter-spacing:.16em;
+                            text-transform:uppercase;
+                        "
+                    >
                         Tüm Çalışmalar ↗
                     </a>
+
                 </div>
 
-            </div>
+
+                <div class="portfolio-grid">
+
+                    <a
+                        href="pages/proje-01.html"
+                        class="project-card"
+                    >
+
+                        <span class="project-category">
+                            SOSYAL MEDYA
+                        </span>
+
+                        <h3>
+                            Dijital Görünüm
+                        </h3>
+
+                        <p>
+                            Sosyal medya / Tasarım
+                        </p>
+
+                    </a>
 
 
-            <div class="works-grid">
+                    <a
+                        href="pages/proje-02.html"
+                        class="project-card"
+                    >
 
-                <a href="pages/proje-01.html" class="work-card work-large">
-                    <div class="work-image placeholder-image">
-                        <span>PROJE 01</span>
-                    </div>
+                        <span class="project-category">
+                            VIDEO & REELS
+                        </span>
 
-                    <div class="work-meta">
-                        <div>
-                            <h3>Proje Başlığı</h3>
-                            <p>Sosyal Medya / Tasarım</p>
-                        </div>
+                        <h3>
+                            Kısa Form
+                        </h3>
 
-                        <span>↗</span>
-                    </div>
-                </a>
+                        <p>
+                            Video / Kurgu
+                        </p>
 
-
-                <a href="pages/proje-02.html" class="work-card">
-                    <div class="work-image placeholder-image">
-                        <span>PROJE 02</span>
-                    </div>
-
-                    <div class="work-meta">
-                        <div>
-                            <h3>Proje Başlığı</h3>
-                            <p>Video & Reels</p>
-                        </div>
-
-                        <span>↗</span>
-                    </div>
-                </a>
+                    </a>
 
 
-                <a href="pages/proje-03.html" class="work-card">
-                    <div class="work-image placeholder-image">
-                        <span>PROJE 03</span>
-                    </div>
+                    <a
+                        href="pages/proje-03.html"
+                        class="project-card"
+                    >
 
-                    <div class="work-meta">
-                        <div>
-                            <h3>Proje Başlığı</h3>
-                            <p>Tasarım</p>
-                        </div>
+                        <span class="project-category">
+                            TASARIM
+                        </span>
 
-                        <span>↗</span>
-                    </div>
-                </a>
+                        <h3>
+                            Görsel Kimlik
+                        </h3>
 
+                        <p>
+                            Afiş / Kampanya
+                        </p>
 
-                <a href="pages/proje-04.html" class="work-card work-wide">
-                    <div class="work-image placeholder-image">
-                        <span>PROJE 04</span>
-                    </div>
-
-                    <div class="work-meta">
-                        <div>
-                            <h3>Proje Başlığı</h3>
-                            <p>Reklam Kreatifleri</p>
-                        </div>
-
-                        <span>↗</span>
-                    </div>
-                </a>
-
-            </div>
-
-        </section>
+                    </a>
 
 
-        <!-- =========================
-             PROCESS
-        ========================== -->
+                    <a
+                        href="pages/proje-04.html"
+                        class="project-card"
+                    >
 
-        <section class="process section" id="process">
+                        <span class="project-category">
+                            REKLAM KREATİFLERİ
+                        </span>
 
-            <div class="section-label">
-                <span>04</span>
-                <span>ÇALIŞMA SÜRECİ</span>
-            </div>
+                        <h3>
+                            Kampanya
+                        </h3>
 
-            <div class="process-intro">
-                <h2>
-                    Fikirden
-                    <span>sonuca.</span>
-                </h2>
+                        <p>
+                            Reklam / Kreatif
+                        </p>
 
-                <p>
-                    Her projeyi net bir fikir, güçlü bir tasarım
-                    ve kontrollü bir üretim süreciyle ele alıyoruz.
-                </p>
-            </div>
+                    </a>
 
-
-            <div class="process-list">
-
-                <div class="process-item">
-                    <span>01</span>
-                    <h3>Anla</h3>
-                    <p>
-                        Markanı, hedefini ve ihtiyacını anlamaya
-                        odaklanıyoruz.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>02</span>
-                    <h3>Tasarla</h3>
-                    <p>
-                        Fikri görsel bir konsepte ve güçlü
-                        bir tasarıma dönüştürüyoruz.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>03</span>
-                    <h3>Üret</h3>
-                    <p>
-                        İçeriği, videoyu veya kreatifi
-                        profesyonel şekilde hazırlıyoruz.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>04</span>
-                    <h3>Geliştir</h3>
-                    <p>
-                        Çalışmayı son haline getiriyor ve
-                        ihtiyaçlara göre geliştiriyoruz.
-                    </p>
                 </div>
 
             </div>
@@ -382,84 +556,245 @@
         </section>
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+        <!-- PROCESS -->
+        <section class="process" id="process">
 
-        <section class="about section" id="about">
+            <div class="process-inner">
 
-            <div class="section-label">
-                <span>05</span>
-                <span>HAKKIMIZDA</span>
-            </div>
+                <div class="section-heading">
 
-            <div class="about-content">
+                    <div>
 
-                <h2>
-                    ATG DIGITAL,
-                    <span>fikri görünür hale getirir.</span>
-                </h2>
+                        <span
+                            style="
+                                display:block;
+                                margin-bottom:18px;
+                                color:var(--gold-light);
+                                font-size:10px;
+                                font-weight:700;
+                                letter-spacing:.22em;
+                            "
+                        >
+                            04 / ÇALIŞMA SÜRECİ
+                        </span>
 
-                <p>
-                    Dijital dünyada güçlü bir görünüm oluşturmak isteyen
-                    markalar için tasarım, içerik, video ve reklam
-                    kreatifleri üretiyoruz.
-                </p>
+                        <h2>
+                            Fikirden
+                            <span>sonuca.</span>
+                        </h2>
 
-                <a href="pages/hakkimizda.html" class="text-link">
-                    ATG'yi Tanıyın ↗
-                </a>
+                    </div>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-item">
+                        <span>01</span>
+
+                        <h3>
+                            Anla
+                        </h3>
+
+                        <p>
+                            Markanı, hedefini ve ihtiyacını
+                            anlamaya odaklanıyoruz.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>02</span>
+
+                        <h3>
+                            Tasarla
+                        </h3>
+
+                        <p>
+                            Fikri görsel bir konsepte ve
+                            güçlü bir tasarıma dönüştürüyoruz.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>03</span>
+
+                        <h3>
+                            Üret
+                        </h3>
+
+                        <p>
+                            İçeriği, videoyu veya kreatifi
+                            profesyonel şekilde hazırlıyoruz.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>04</span>
+
+                        <h3>
+                            Geliştir
+                        </h3>
+
+                        <p>
+                            Çalışmayı son haline getiriyor ve
+                            ihtiyaçlara göre geliştiriyoruz.
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             CTA
-        ========================== -->
+        <!-- ABOUT -->
+        <section class="about" id="about">
 
-        <section class="final-cta section">
+            <div class="about-inner">
 
-            <div class="cta-inner">
+                <div class="about-label">
+                    05 / HAKKIMIZDA
+                </div>
 
-                <p class="eyebrow">BİR PROJENİZ Mİ VAR?</p>
+                <div>
 
-                <h2>
-                    Fikrinizi
-                    <span>birlikte büyütelim.</span>
-                </h2>
+                    <h2>
+                        ATG DIGITAL,
+                        <span>fikri görünür hale getirir.</span>
+                    </h2>
 
-                <a href="pages/iletisim.html" class="button button-primary">
-                    Projeni Anlat
-                </a>
+                    <p>
+                        Dijital dünyada güçlü bir görünüm oluşturmak
+                        isteyen markalar için tasarım, içerik, video
+                        ve reklam kreatifleri üretiyoruz.
+                    </p>
+
+                    <a
+                        href="pages/hakkimizda.html"
+                        style="
+                            display:inline-flex;
+                            margin-top:30px;
+                            color:var(--gold-light);
+                            font-size:11px;
+                            font-weight:700;
+                            letter-spacing:.16em;
+                            text-transform:uppercase;
+                        "
+                    >
+                        ATG'yi Tanıyın ↗
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
+        <!-- CTA -->
+        <section class="final-cta">
 
-        <section class="contact section" id="contact">
+            <p class="hero-eyebrow">
+                BİR PROJENİZ Mİ VAR?
+            </p>
 
-            <div class="section-label">
-                <span>06</span>
-                <span>İLETİŞİM</span>
-            </div>
+            <h2>
+                Fikrinizi
+                <span>birlikte büyütelim.</span>
+            </h2>
 
-            <div class="contact-content">
+            <p>
+                Markanız için güçlü bir dijital görünüm
+                oluşturmak istiyorsanız, konuşalım.
+            </p>
 
-                <h2>
-                    Bir fikrin varsa,
-                    <span>konuşalım.</span>
-                </h2>
+            <a
+                href="pages/iletisim.html"
+                class="inner-button"
+            >
+                Projeni Anlat
+            </a>
 
-                <a href="pages/iletisim.html" class="contact-email">
-                    Proje için iletişime geç ↗
-                </a>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+
+            <div class="contact-inner">
+
+                <div>
+
+                    <span
+                        style="
+                            color:var(--gold-light);
+                            font-size:10px;
+                            font-weight:700;
+                            letter-spacing:.22em;
+                        "
+                    >
+                        06 / İLETİŞİM
+                    </span>
+
+                    <h2>
+                        Bir fikrin varsa,
+                        <span>konuşalım.</span>
+                    </h2>
+
+                    <p class="contact-copy">
+                        Projenizi, ihtiyacınızı veya markanız için
+                        düşündüğünüz fikri bize anlatın.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <div class="contact-info-block">
+
+                        <span>
+                            E-POSTA
+                        </span>
+
+                        <a href="mailto:info@atgdigital.com">
+                            info@atgdigital.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-info-block">
+
+                        <span>
+                            INSTAGRAM
+                        </span>
+
+                        <a href="#">
+                            @atgdigital
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-info-block">
+
+                        <span>
+                            PROJE
+                        </span>
+
+                        <a href="pages/iletisim.html">
+                            Proje formuna geç ↗
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -468,47 +803,93 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
 
-        <div class="footer-top">
+        <div class="footer-inner">
 
-            <a href="index.html" class="footer-brand">
-                ATG<span>.</span>
-            </a>
+            <div class="footer-brand">
 
-            <p>
-                Dijital dünyada iz bırakan
-                işler üretiyoruz.
-            </p>
+                <a
+                    href="index.html"
+                    class="logo"
+                    aria-label="ATG DIGITAL"
+                >
+                    <img
+                        src="assets/atg-logo-cropped.png"
+                        alt="ATG Digital"
+                        style="
+                            width:62px;
+                            height:62px;
+                            object-fit:contain;
+                        "
+                    >
+                </a>
 
-        </div>
+                <p>
+                    Dijital dünyada iz bırakan
+                    işler üretiyoruz.
+                </p>
 
-
-        <div class="footer-links">
-
-            <div>
-                <span>MENÜ</span>
-                <a href="index.html">Ana Sayfa</a>
-                <a href="pages/hizmetler.html">Hizmetler</a>
-                <a href="pages/calismalar.html">Çalışmalar</a>
-                <a href="pages/hakkimizda.html">Hakkımızda</a>
-                <a href="pages/iletisim.html">İletişim</a>
             </div>
 
 
-            <div>
-                <span>SOSYAL</span>
-                <a href="#" target="_blank" rel="noopener">Instagram</a>
-            </div>
+            <div class="footer-links">
+
+                <div>
+
+                    <span>
+                        MENÜ
+                    </span>
+
+                    <a href="index.html">
+                        Ana Sayfa
+                    </a>
+
+                    <a href="pages/hizmetler.html">
+                        Hizmetler
+                    </a>
+
+                    <a href="pages/calismalar.html">
+                        Çalışmalar
+                    </a>
+
+                    <a href="pages/hakkimizda.html">
+                        Hakkımızda
+                    </a>
+
+                    <a href="pages/iletisim.html">
+                        İletişim
+                    </a>
+
+                </div>
 
 
-            <div>
-                <span>İLETİŞİM</span>
-                <a href="mailto:info@atgdigital.com">E-posta</a>
+                <div>
+
+                    <span>
+                        SOSYAL
+                    </span>
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        İLETİŞİM
+                    </span>
+
+                    <a href="mailto:info@atgdigital.com">
+                        E-posta
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
@@ -516,9 +897,13 @@
 
         <div class="footer-bottom">
 
-            <span>© 2026 ATG DIGITAL</span>
+            <span>
+                © <span data-current-year></span> ATG DIGITAL
+            </span>
 
-            <span>ALL RIGHTS RESERVED</span>
+            <span>
+                ALL RIGHTS RESERVED
+            </span>
 
         </div>
 
@@ -528,4 +913,4 @@
     <script src="script.js"></script>
 
 </body>
-</html> 
+</html>
