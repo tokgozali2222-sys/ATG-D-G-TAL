@@ -2249,3 +2249,10 @@ button {
     }
 
 }
+/* =========================================
+   REMOVE HERO DECORATIVE LOGO
+   ========================================= */
+
+.hero-inner > div[aria-hidden="true"] {
+    display: none !important;
+} 
