@@ -431,117 +431,340 @@
         </div>
 
 
+    
         <!-- RIGHT VISUAL -->
-        <div aria-hidden="true" style="
-            position:absolute;
-            right:clamp(20px,6vw,90px);
-            top:50%;
-            width:min(42vw,590px);
-            aspect-ratio:1;
-            transform:translateY(-50%);
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            pointer-events:none;
-        ">
+<div aria-hidden="true" class="hero-visual">
 
-            <!-- Outer orbit -->
-            <div style="
-                position:absolute;
-                inset:0;
-                border:1px solid rgba(214,173,69,.20);
-                border-radius:50%;
-                animation:atgRotate 24s linear infinite;
-            "></div>
+    <div class="visual-orbit orbit-1"></div>
+    <div class="visual-orbit orbit-2"></div>
+    <div class="visual-orbit orbit-3"></div>
 
+    <div class="visual-core">
+        <div class="core-inner"></div>
+        <div class="core-glow"></div>
+    </div>
 
-            <!-- Orbit markers -->
-            <div style="
-                position:absolute;
-                top:4%;
-                left:50%;
-                width:7px;
-                height:7px;
-                background:#d6ad45;
-                border-radius:50%;
-                box-shadow:0 0 20px rgba(214,173,69,.8);
-            "></div>
+    <div class="visual-dot dot-1"></div>
+    <div class="visual-dot dot-2"></div>
+    <div class="visual-dot dot-3"></div>
+    <div class="visual-dot dot-4"></div>
 
-            <div style="
-                position:absolute;
-                bottom:18%;
-                right:5%;
-                width:5px;
-                height:5px;
-                background:#f1d27a;
-                border-radius:50%;
-                box-shadow:0 0 18px rgba(214,173,69,.8);
-            "></div>
+    <div class="visual-line line-1"></div>
+    <div class="visual-line line-2"></div>
+
+</div>
 
 
-            <!-- Inner ring -->
-            <div style="
-                position:absolute;
-                inset:13%;
-                border:1px solid rgba(214,173,69,.15);
-                border-radius:50%;
-                animation:atgRotateReverse 16s linear infinite;
-            "></div>
+<style>
+
+.hero-visual {
+    position:absolute;
+    right:clamp(10px,5vw,80px);
+    top:50%;
+    width:min(44vw,620px);
+    aspect-ratio:1;
+    transform:translateY(-50%);
+    pointer-events:none;
+    z-index:0;
+}
 
 
-            <!-- Logo -->
-            <div style="
-                position:relative;
-                width:54%;
-                aspect-ratio:1;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                border-radius:50%;
-                background:
-                    radial-gradient(
-                        circle at center,
-                        rgba(214,173,69,.11),
-                        rgba(5,5,5,.78) 65%
-                    );
-                box-shadow:
-                    0 0 90px rgba(214,173,69,.10),
-                    inset 0 0 70px rgba(214,173,69,.05);
-            ">
+/* CORE */
 
-                <img
-                    src="assets/atg-logo-cropped.png"
-                    alt="ATG Digital"
-                    style="
-                        width:82%;
-                        height:82%;
-                        object-fit:contain;
-                        filter:
-                            drop-shadow(
-                                0 0 28px
-                                rgba(214,173,69,.28)
-                            );
-                        animation:atgFloat 5s ease-in-out infinite;
-                    "
-                >
+.visual-core {
+    position:absolute;
+    width:42%;
+    aspect-ratio:1;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
 
-            </div>
+    background:
+        radial-gradient(
+            circle at 38% 32%,
+            rgba(241,210,122,.42),
+            rgba(214,173,69,.16) 24%,
+            rgba(214,173,69,.045) 48%,
+            transparent 72%
+        );
+
+    box-shadow:
+        0 0 80px rgba(214,173,69,.12),
+        0 0 180px rgba(214,173,69,.07);
+
+    animation:corePulse 5s ease-in-out infinite;
+}
 
 
-            <!-- Crosshair -->
-            <div style="
-                position:absolute;
-                width:18px;
-                height:18px;
-                left:50%;
-                top:50%;
-                transform:translate(-50%,-50%);
-                border:1px solid rgba(214,173,69,.55);
-                border-radius:50%;
-            "></div>
+.core-inner {
+    position:absolute;
+    inset:18%;
+    border-radius:50%;
 
-        </div>
+    border:1px solid rgba(214,173,69,.42);
 
+    box-shadow:
+        inset 0 0 35px rgba(214,173,69,.12),
+        0 0 30px rgba(214,173,69,.08);
+
+    animation:coreSpin 12s linear infinite;
+}
+
+
+.core-glow {
+    position:absolute;
+    width:22%;
+    height:22%;
+    left:28%;
+    top:23%;
+    border-radius:50%;
+
+    background:#f1d27a;
+
+    filter:blur(14px);
+
+    opacity:.5;
+
+    animation:glowMove 4s ease-in-out infinite alternate;
+}
+
+
+/* ORBITS */
+
+.visual-orbit {
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    border:1px solid rgba(214,173,69,.16);
+
+    border-radius:50%;
+}
+
+.orbit-1 {
+    width:72%;
+    height:72%;
+    transform:translate(-50%,-50%) rotate(18deg);
+    animation:orbitA 20s linear infinite;
+}
+
+.orbit-2 {
+    width:91%;
+    height:48%;
+    transform:translate(-50%,-50%) rotate(-28deg);
+
+    border-color:rgba(214,173,69,.12);
+
+    animation:orbitB 16s linear infinite;
+}
+
+.orbit-3 {
+    width:52%;
+    height:94%;
+    transform:translate(-50%,-50%) rotate(52deg);
+
+    border-color:rgba(214,173,69,.09);
+
+    animation:orbitC 24s linear infinite reverse;
+}
+
+
+/* DOTS */
+
+.visual-dot {
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+
+    background:#d6ad45;
+
+    box-shadow:
+        0 0 12px rgba(214,173,69,.8),
+        0 0 28px rgba(214,173,69,.35);
+}
+
+.dot-1 {
+    left:19%;
+    top:28%;
+    animation:dotFloat 4s ease-in-out infinite;
+}
+
+.dot-2 {
+    right:17%;
+    top:34%;
+    animation:dotFloat 5s ease-in-out infinite reverse;
+}
+
+.dot-3 {
+    right:24%;
+    bottom:20%;
+    width:4px;
+    height:4px;
+    animation:dotFloat 3.5s ease-in-out infinite;
+}
+
+.dot-4 {
+    left:28%;
+    bottom:18%;
+    width:4px;
+    height:4px;
+    animation:dotFloat 4.5s ease-in-out infinite reverse;
+}
+
+
+/* LIGHT LINES */
+
+.visual-line {
+    position:absolute;
+    width:1px;
+    height:100px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(214,173,69,.65),
+            transparent
+        );
+
+    opacity:.45;
+}
+
+.line-1 {
+    right:21%;
+    top:8%;
+    animation:lineMove 5s ease-in-out infinite;
+}
+
+.line-2 {
+    left:20%;
+    bottom:8%;
+    transform:rotate(180deg);
+    animation:lineMove 6s ease-in-out infinite reverse;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes corePulse {
+    0%,100% {
+        transform:translate(-50%,-50%) scale(.94);
+        opacity:.75;
+    }
+
+    50% {
+        transform:translate(-50%,-50%) scale(1.05);
+        opacity:1;
+    }
+}
+
+@keyframes coreSpin {
+    from {
+        transform:rotate(0deg);
+    }
+
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes glowMove {
+    from {
+        transform:translate(0,0);
+        opacity:.3;
+    }
+
+    to {
+        transform:translate(70px,45px);
+        opacity:.65;
+    }
+}
+
+@keyframes orbitA {
+    from {
+        transform:translate(-50%,-50%) rotate(18deg);
+    }
+
+    to {
+        transform:translate(-50%,-50%) rotate(378deg);
+    }
+}
+
+@keyframes orbitB {
+    from {
+        transform:translate(-50%,-50%) rotate(-28deg);
+    }
+
+    to {
+        transform:translate(-50%,-50%) rotate(332deg);
+    }
+}
+
+@keyframes orbitC {
+    from {
+        transform:translate(-50%,-50%) rotate(52deg);
+    }
+
+    to {
+        transform:translate(-50%,-50%) rotate(-308deg);
+    }
+}
+
+@keyframes dotFloat {
+    0%,100% {
+        transform:translateY(0);
+        opacity:.45;
+    }
+
+    50% {
+        transform:translateY(-18px);
+        opacity:1;
+    }
+}
+
+@keyframes lineMove {
+    0%,100% {
+        transform:translateY(-30px);
+        opacity:0;
+    }
+
+    50% {
+        transform:translateY(40px);
+        opacity:.7;
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width:900px) {
+
+    .hero-visual {
+        width:520px;
+        right:-180px;
+        top:58%;
+        opacity:.55;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width:600px) {
+
+    .hero-visual {
+        width:390px;
+        right:-145px;
+        top:62%;
+        opacity:.32;
+    }
+
+}
+
+</style> 
 
         <!-- EDITORIAL META -->
         <div style="
