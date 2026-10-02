@@ -2079,4 +2079,173 @@ button {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
+} 
+/* =========================================
+   ATG FINAL HEADER + LOGO POLISH
+   ========================================= */
+
+/* HEADER */
+.site-header .logo {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    position: relative !important;
+}
+
+/* Gerçek logo */
+.site-header .logo img {
+    display: block !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    transform: none !important;
+}
+
+/* Logonun yanındaki dekoratif elması kaldır */
+.site-header .logo::before,
+.site-header .logo::after {
+    display: none !important;
+    content: none !important;
+}
+
+
+/* Header içindeki logo alanını temizle */
+.header-inner {
+    align-items: center !important;
+}
+
+
+/* =========================================
+   HERO LOGO
+   ========================================= */
+
+.hero-inner > div[aria-hidden="true"] {
+    width: min(38vw, 520px) !important;
+    right: clamp(20px, 5vw, 80px) !important;
+
+    opacity: .18 !important;
+}
+
+
+/* Hero logosunun kendi boyutu */
+.hero-inner > div[aria-hidden="true"] img {
+    width: 78% !important;
+    height: 78% !important;
+
+    object-fit: contain !important;
+}
+
+
+/* Hero'daki dış halkaları daha zarif yap */
+.hero-inner > div[aria-hidden="true"] > div {
+    opacity: .65;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .site-header .logo {
+        width: 64px !important;
+        height: 64px !important;
+    }
+
+    .site-header .logo img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .hero-inner > div[aria-hidden="true"] {
+        width: 390px !important;
+        right: -120px !important;
+        top: 57% !important;
+
+        opacity: .14 !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .site-header .logo {
+        width: 58px !important;
+        height: 58px !important;
+    }
+
+    .site-header .logo img {
+        width: 54px !important;
+        height: 54px !important;
+    }
+
+    .hero-inner > div[aria-hidden="true"] {
+        width: 300px !important;
+        right: -105px !important;
+        top: 62% !important;
+
+        opacity: .11 !important;
+    }
+
+    .hero-inner > div[aria-hidden="true"] img {
+        width: 76% !important;
+        height: 76% !important;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 390px) {
+
+    .site-header .logo {
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    .site-header .logo img {
+        width: 49px !important;
+        height: 49px !important;
+    }
+
+    .hero-inner > div[aria-hidden="true"] {
+        width: 270px !important;
+        right: -100px !important;
+        opacity: .09 !important;
+    }
+
 }
