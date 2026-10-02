@@ -539,127 +539,852 @@
     z-index: -2;
 
 }
-
-
 /* =========================================================
-   CREATIVE PANELS
+   CREATIVE INTERFACE PANELS
    ========================================================= */
 
 .atg-panel {
 
     position: absolute;
 
-    width: 190px;
-    height: 105px;
+    width: 210px;
+    height: 132px;
 
-    padding: 14px;
+    padding: 12px;
 
-    border:
-        1px solid rgba(214,173,69,.09);
+    border: 1px solid rgba(214,173,69,.12);
 
     background:
         linear-gradient(
             145deg,
-            rgba(255,255,255,.018),
-            rgba(255,255,255,.003)
+            rgba(255,255,255,.035),
+            rgba(255,255,255,.006)
         );
 
-    backdrop-filter: blur(4px);
+    box-shadow:
+        inset 0 0 35px rgba(214,173,69,.018),
+        0 15px 45px rgba(0,0,0,.25);
+
+    backdrop-filter: blur(6px);
+
+    color: rgba(245,243,237,.38);
 
     opacity: 0;
 
     pointer-events: none;
 
-    color: rgba(245,243,237,.32);
-
-    font-size: 7px;
-
-    letter-spacing: .18em;
+    overflow: hidden;
 
     animation:
-        atgPanelIn 1.5s
+        atgPanelIn
+        1.5s
         cubic-bezier(.22,1,.36,1)
         forwards;
 
 }
 
-.atg-panel span {
 
-    display: block;
+/* PANEL TOP */
 
-    color: rgba(214,173,69,.4);
+.panel-top {
 
-    margin-bottom: 18px;
+    position: relative;
 
-}
+    z-index: 5;
 
-.atg-panel strong {
+    display: flex;
 
-    display: block;
+    justify-content: space-between;
 
-    font-size: 11px;
+    align-items: center;
 
-    color: rgba(245,243,237,.3);
+    padding-bottom: 8px;
 
-    letter-spacing: .12em;
+    border-bottom:
+        1px solid rgba(214,173,69,.08);
 
-}
-
-.atg-panel small {
-
-    display: block;
-
-    margin-top: 6px;
+    color:
+        rgba(214,173,69,.48);
 
     font-size: 6px;
 
-    color: rgba(245,243,237,.16);
+    font-weight: 700;
+
+    letter-spacing: .18em;
 
 }
+
+
+/* PANEL BOTTOM */
+
+.panel-bottom {
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+        rgba(245,243,237,.18);
+
+    font-size: 5px;
+
+    font-weight: 700;
+
+    letter-spacing: .15em;
+
+}
+
+
+/* =========================================================
+   VISUAL DESIGN
+   ========================================================= */
+
+.design-window {
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    top: 38px;
+    bottom: 25px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,.012);
+
+    border:
+        1px solid rgba(214,173,69,.055);
+
+}
+
+
+.design-grid {
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(214,173,69,.07) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(214,173,69,.07) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        22px 22px;
+
+}
+
+
+.design-block {
+
+    position: absolute;
+
+    border:
+        1px solid rgba(214,173,69,.22);
+
+}
+
+
+.block-a {
+
+    width: 52px;
+    height: 38px;
+
+    left: 17px;
+    top: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(214,173,69,.08),
+            transparent
+        );
+
+}
+
+
+.block-b {
+
+    width: 72px;
+    height: 27px;
+
+    right: 12px;
+    bottom: 12px;
+
+    background:
+        rgba(214,173,69,.035);
+
+}
+
+
+.design-type {
+
+    position: absolute;
+
+    left: 12px;
+    bottom: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+.design-type strong {
+
+    color:
+        rgba(245,243,237,.55);
+
+    font-size: 16px;
+
+    line-height: .8;
+
+    letter-spacing: -.06em;
+
+}
+
+
+.design-type small {
+
+    color:
+        rgba(214,173,69,.4);
+
+    font-size: 5px;
+
+    letter-spacing: .16em;
+
+}
+
+
+.design-line {
+
+    position: absolute;
+
+    right: 18px;
+    top: 19px;
+
+    width: 34px;
+    height: 1px;
+
+    background:
+        #d6ad45;
+
+    opacity: .55;
+
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.video-window {
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    top: 38px;
+    bottom: 25px;
+
+    border:
+        1px solid rgba(214,173,69,.055);
+
+    background:
+        #070707;
+
+    overflow: hidden;
+
+}
+
+
+.video-preview {
+
+    position: absolute;
+
+    inset: 0 0 25px 0;
+
+    background:
+        radial-gradient(
+            circle at 55% 45%,
+            rgba(214,173,69,.12),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #0c0c0c,
+            #030303
+        );
+
+}
+
+
+.video-preview::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%)
+        rotate(12deg);
+
+    border:
+        1px solid rgba(214,173,69,.28);
+
+}
+
+
+.video-preview::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 110px;
+    height: 1px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(214,173,69,.45),
+            transparent
+        );
+
+}
+
+
+.video-play {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    color:
+        rgba(245,243,237,.55);
+
+    font-size: 12px;
+
+}
+
+
+.video-subject {
+
+    position: absolute;
+
+    left: 35%;
+    bottom: 0;
+
+    width: 32px;
+    height: 54px;
+
+    border-radius:
+        50% 50% 5px 5px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(245,243,237,.12),
+            rgba(214,173,69,.025)
+        );
+
+    filter:
+        blur(2px);
+
+}
+
+
+.timeline {
+
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: 7px;
+
+    height: 9px;
+
+    display: flex;
+
+    gap: 2px;
+
+}
+
+
+.timeline span {
+
+    flex: 1;
+
+    height: 100%;
+
+    border:
+        1px solid rgba(214,173,69,.13);
+
+    background:
+        rgba(214,173,69,.025);
+
+}
+
+
+.timeline span:nth-child(2),
+.timeline span:nth-child(5) {
+
+    background:
+        rgba(214,173,69,.13);
+
+}
+
+
+.video-time {
+
+    position: absolute;
+
+    right: 8px;
+    bottom: 20px;
+
+    color:
+        rgba(214,173,69,.4);
+
+    font-size: 5px;
+
+    letter-spacing: .1em;
+
+}
+
+
+/* =========================================================
+   ADVERTISING
+   ========================================================= */
+
+.ad-window {
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    top: 38px;
+    bottom: 25px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214,173,69,.06),
+            rgba(255,255,255,.012)
+        );
+
+    border:
+        1px solid rgba(214,173,69,.055);
+
+}
+
+
+.ad-title {
+
+    position: absolute;
+
+    left: 13px;
+    top: 15px;
+
+    color:
+        rgba(245,243,237,.43);
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    line-height: .83;
+
+    letter-spacing:
+        -.055em;
+
+}
+
+
+.ad-title strong {
+
+    color:
+        #d6ad45;
+
+    font-weight: 900;
+
+}
+
+
+.ad-shape {
+
+    position: absolute;
+
+    right: -12px;
+    bottom: -22px;
+
+    width: 82px;
+    height: 82px;
+
+    border:
+        1px solid rgba(214,173,69,.22);
+
+    border-radius: 50%;
+
+    box-shadow:
+        inset 0 0 30px rgba(214,173,69,.035);
+
+}
+
+
+.ad-button {
+
+    position: absolute;
+
+    left: 13px;
+    bottom: 13px;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid rgba(214,173,69,.3);
+
+    color:
+        rgba(214,173,69,.55);
+
+    font-size: 5px;
+
+    letter-spacing: .16em;
+
+}
+
+
+.ad-meta {
+
+    position: absolute;
+
+    right: 12px;
+    top: 14px;
+
+    color:
+        rgba(245,243,237,.18);
+
+    font-size: 5px;
+
+    letter-spacing: .14em;
+
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+   ========================================================= */
+
+.social-window {
+
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    top: 38px;
+    bottom: 25px;
+
+    border:
+        1px solid rgba(214,173,69,.055);
+
+    background:
+        rgba(255,255,255,.012);
+
+    overflow: hidden;
+
+}
+
+
+.social-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        7px 8px;
+
+    border-bottom:
+        1px solid rgba(214,173,69,.07);
+
+}
+
+
+.social-avatar {
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(214,173,69,.4);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214,173,69,.2),
+            transparent 65%
+        );
+
+}
+
+
+.social-header span {
+
+    display: block;
+
+    color:
+        rgba(245,243,237,.38);
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+}
+
+
+.social-header small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color:
+        rgba(214,173,69,.27);
+
+    font-size: 4px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.social-content {
+
+    padding: 7px;
+
+}
+
+
+.social-image {
+
+    width: 100%;
+    height: 45px;
+
+    border:
+        1px solid rgba(214,173,69,.08);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(214,173,69,.08),
+            transparent 50%
+        ),
+
+        repeating-linear-gradient(
+            135deg,
+            transparent 0,
+            transparent 9px,
+            rgba(214,173,69,.025) 10px
+        );
+
+}
+
+
+.social-lines {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 7px;
+
+}
+
+
+.social-lines span {
+
+    display: block;
+
+    height: 2px;
+
+    background:
+        rgba(245,243,237,.10);
+
+}
+
+
+.social-lines span:nth-child(1) {
+    width: 68%;
+}
+
+.social-lines span:nth-child(2) {
+    width: 48%;
+}
+
+.social-lines span:nth-child(3) {
+    width: 31%;
+}
+
+
+.social-stats {
+
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: 7px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+        rgba(214,173,69,.28);
+
+    font-size: 4px;
+
+    letter-spacing: .1em;
+
+}
+
+
+/* =========================================================
+   PANEL POSITIONS
+   ========================================================= */
 
 .atg-panel-1 {
 
     left: 7%;
-    top: 24%;
+    top: 23%;
 
-    transform: rotate(-5deg);
+    transform:
+        rotate(-5deg);
 
-    animation-delay: .9s;
+    animation-delay:
+        .9s;
 
 }
+
 
 .atg-panel-2 {
 
     right: 7%;
-    top: 20%;
+    top: 19%;
 
-    transform: rotate(4deg);
+    transform:
+        rotate(4deg);
 
-    animation-delay: 1.15s;
+    animation-delay:
+        1.15s;
 
 }
+
 
 .atg-panel-3 {
 
-    left: 9%;
-    bottom: 19%;
+    left: 8%;
+    bottom: 18%;
 
-    transform: rotate(4deg);
+    transform:
+        rotate(4deg);
 
-    animation-delay: 1.4s;
+    animation-delay:
+        1.4s;
 
 }
+
 
 .atg-panel-4 {
 
-    right: 9%;
-    bottom: 22%;
+    right: 8%;
+    bottom: 21%;
 
-    transform: rotate(-4deg);
+    transform:
+        rotate(-4deg);
 
-    animation-delay: 1.65s;
+    animation-delay:
+        1.65s;
 
 }
+
+
+/* =========================================================
+   PANEL ENTRANCE
+   ========================================================= */
+
+@keyframes atgPanelIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(22px)
+            scale(.96)
+            rotate(0deg);
+
+        filter:
+            blur(5px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        filter:
+            blur(0);
+
+    }
+
+} 
 
 
 /* =========================================================
