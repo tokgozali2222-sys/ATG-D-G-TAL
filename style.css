@@ -2256,3 +2256,11 @@ button {
 .hero-inner > div[aria-hidden="true"] {
     display: none !important;
 } 
+/* HERO ICINDEKI DEKORATIF LOGOYU KALDIR */
+section.hero img[src*="atg-logo"] {
+    display: none !important;
+}
+
+.hero img[src*="ATG-logo"] {
+    display: none !important;
+} 
