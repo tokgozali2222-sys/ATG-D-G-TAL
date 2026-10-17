@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="tr">
 <head>
@@ -8,11 +9,10 @@
 <title>Social Media Design | ATG DIGITAL</title>
 <link rel="stylesheet" href="atg-service-pages.css">
 <style>
-/* Yalnızca bu sayfadaki yeni portföy galerisi için ek stiller */
 .portfolio-strip{overflow:hidden;margin-top:28px}
 .portfolio-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
 .portfolio-slide{flex:0 0 min(78%,330px);scroll-snap-align:start;border:1px solid rgba(214,173,69,.42);border-radius:16px;overflow:hidden;background:#0d0d0d}
-.portfolio-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;background:#080808}
+.portfolio-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#080808}
 .portfolio-caption{padding:13px 15px;color:#d6ad45;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
 .portfolio-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
 .portfolio-arrows{display:flex;gap:8px}
@@ -24,44 +24,163 @@
 </style>
 </head>
 <body>
-<header class="topbar"><div class="wrap nav">
+<header class="topbar">
+<div class="wrap nav">
 <a class="brand" href="../index.html" aria-label="ATG Digital ana sayfa"><span class="brand-mark">ATG</span><span>ATG DIGITAL</span></a>
 <button class="menu" id="menu" aria-expanded="false" aria-label="Menüyü aç">☰</button>
-<nav class="navlinks" id="navlinks"><a href="../index.html">Ana Sayfa</a><a href="hizmet-sosyal-medya.html">Social Media Design</a><a href="hizmet-tasarim.html">Graphic Design</a><a href="hizmet-video-reels.html">Video Production</a><a href="hizmet-reklam-kreatifleri.html">Advertising Creatives</a></nav>
+<nav class="navlinks" id="navlinks">
+<a href="../index.html">Ana Sayfa</a>
+<a href="hizmet-sosyal-medya.html">Social Media Design</a>
+<a href="hizmet-tasarim.html">Graphic Design</a>
+<a href="hizmet-video-reels.html">Video Production</a>
+<a href="hizmet-reklam-kreatifleri.html">Advertising Creatives</a>
+</nav>
 <a class="navcta" href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Teklif al ↗</a>
-</div></header>
+</div>
+</header>
+
 <main>
-<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><a class="backlink" href="../index.html">← Ana sayfaya dön</a><span class="eyebrow">Social Media Design</span><h1>Markanızın dijitaldeki <span>imzası.</span></h1><p>Markanızın tarzını yansıtan, dikkat çeken sosyal medya tasarımları hazırlıyoruz.</p><div class="actions"><a class="btn primary" href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Teklif al ↗</a><a class="btn secondary" href="#hizmetler">Hizmetleri incele</a></div></div><div class="hero-art"><img src="../atg-social-design-01-01.jpg" alt="ATG Digital için restoran kampanyası sosyal medya tasarımı"></div></div></section>
-<section class="section" id="hizmetler"><div class="wrap"><div class="section-head"><div><span class="eyebrow">HİZMETLERİMİZ</span><h2>İhtiyacınıza uygun <span class="gold">çözümler.</span></h2></div><p>Her tasarımı markanızın ihtiyacına, hedef kitlesine ve kullanılacağı mecraya göre ele alıyoruz.</p></div>
+<section class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<a class="backlink" href="../index.html">← Ana sayfaya dön</a>
+<span class="eyebrow">Social Media Design</span>
+<h1>Markanızın dijitaldeki <span>imzası.</span></h1>
+<p>Markanızın tarzını yansıtan, dikkat çeken sosyal medya tasarımları hazırlıyoruz.</p>
+<div class="actions">
+<a class="btn primary" href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Teklif al ↗</a>
+<a class="btn secondary" href="#hizmetler">Hizmetleri incele</a>
+</div>
+</div>
+<div class="hero-art">
+<img src="../assets/atg-social-design-01-01.jpg" alt="ATG Digital restoran kampanyası tasarımı">
+</div>
+</div>
+</section>
+
+<section class="section" id="hizmetler">
+<div class="wrap">
+<div class="section-head">
+<div><span class="eyebrow">HİZMETLERİMİZ</span><h2>İhtiyacınıza uygun <span class="gold">çözümler.</span></h2></div>
+<p>Her tasarımı markanızın ihtiyacına, hedef kitlesine ve kullanılacağı mecraya göre ele alıyoruz.</p>
+</div>
 <div class="service-list">
-<article class="service-card"><img src="../atg-social-design-01-02.jpg" alt="Kahve markası için sosyal medya gönderi tasarımı" loading="lazy"><div class="service-card-copy"><span class="number">01 / HİZMET</span><h3>Gönderi Tasarımı</h3><p>Instagram hesabınız için markanıza özel, dikkat çekici ve profesyonel gönderiler tasarlıyoruz.</p></div></article>
-<article class="service-card"><img src="../atg-social-design-01-03.jpg" alt="Fitness markası için kampanya tasarımı" loading="lazy"><div class="service-card-copy"><span class="number">02 / HİZMET</span><h3>Hikâye ve Kampanya Tasarımı</h3><p>Duyurularınızı ve kampanyalarınızı öne çıkaran, ekranlarda güçlü görünen tasarımlar hazırlıyoruz.</p></div></article>
-<article class="service-card"><img src="../atg-social-design-01-04.jpg" alt="Giyim markası için sosyal medya reklam tasarımı" loading="lazy"><div class="service-card-copy"><span class="number">03 / HİZMET</span><h3>Marka İçerikleri</h3><p>Farklı mecralarda tutarlı görünen, markanızın karakterini yansıtan içerikler oluşturuyoruz.</p></div></article>
-</div></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><div><span class="eyebrow">TASARIM PORTFÖYÜ</span><h2>Farklı markalar. <span class="gold">Farklı hikâyeler.</span></h2></div><p>Örnek tasarımları yatay kaydırarak inceleyin. Telefonda parmağınızla kaydırabilir, okları da kullanabilirsiniz.</p></div>
-<div class="portfolio-strip"><div class="portfolio-track" id="portfolioTrack">
-<article class="portfolio-slide"><img src="../atg-social-design-01-01.jpg" alt="Restoran kampanya tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-01-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy"><div class="portfolio-caption">Kahve / Gönderi</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-01-03.jpg" alt="Spor salonu tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Tanıtım</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-01-04.jpg" alt="Moda markası reklam tasarımı" loading="lazy"><div class="portfolio-caption">Moda / Reklam</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-02-01.jpg" alt="Tatil ve seyahat kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Seyahat / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-02-02.jpg" alt="Otomobil markası reklam tasarımı" loading="lazy"><div class="portfolio-caption">Otomotiv / Reklam</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-02-03.jpg" alt="Cilt bakım ürünü reklam tasarımı" loading="lazy"><div class="portfolio-caption">Bakım / Ürün</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-02-04.jpg" alt="Gayrimenkul tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Gayrimenkul / Tanıtım</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-01.jpg" alt="Burger restoranı menü tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Menü</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-02.jpg" alt="Yaz tatili otel kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Otel / Sezon</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-03.jpg" alt="Fitness üyelik kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-04.jpg" alt="Soğuk kahve ürün tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">İçecek / Ürün</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-05.jpg" alt="Sezon indirimi sosyal medya tasarımı" loading="lazy"><div class="portfolio-caption">Moda / İndirim</div></article>
-<article class="portfolio-slide"><img src="../atg-social-design-03-06.jpg" alt="Parfüm ürünü reklam tasarımı" loading="lazy"><div class="portfolio-caption">Parfüm / Reklam</div></article>
-</div><div class="portfolio-controls"><div class="portfolio-dots" id="portfolioDots" aria-label="Galeri sayfaları"></div><div class="portfolio-arrows"><button class="portfolio-arrow" id="portfolioPrev" aria-label="Önceki tasarım">‹</button><button class="portfolio-arrow" id="portfolioNext" aria-label="Sonraki tasarım">›</button></div></div></div>
-</div></section>
-<section class="section"><div class="wrap"><div class="section-head"><div><span class="eyebrow">ÇALIŞMA SÜRECİ</span><h2>Net ihtiyaç. <span class="gold">Özenli teslim.</span></h2></div><p>İşe başlamadan önce kapsamı, teslim formatını, revizyon beklentisini ve fiyatı karşılıklı olarak netleştiririz.</p></div><div class="steps"><div class="step"><small>01 / TANIŞMA</small><h3>İhtiyacı anlama</h3><p>Hedefinizi, beklentinizi ve kullanım alanını belirliyoruz.</p></div><div class="step"><small>02 / TASARIM</small><h3>Görsel yön</h3><p>Markanıza uygun tasarım dilini oluşturup çalışmayı hazırlıyoruz.</p></div><div class="step"><small>03 / TESLİM</small><h3>Son düzenlemeler</h3><p>Kararlaştırılan kapsam doğrultusunda dosyaları teslim ediyoruz.</p></div></div><div class="cta"><div><span class="eyebrow">ATG DIGITAL</span><h2>Sosyal medya tasarımınızı konuşalım.</h2><p>İhtiyacınızı kısaca anlatın, size uygun kapsamı birlikte belirleyelim.</p></div><a class="btn primary" href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Instagram'dan ulaş ↗</a></div></div></section>
+<article class="service-card">
+<img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası için sosyal medya tasarımı" loading="lazy">
+<div class="service-card-copy"><span class="number">01 / HİZMET</span><h3>Gönderi Tasarımı</h3><p>Instagram hesabınız için markanıza özel, dikkat çekici ve profesyonel gönderiler tasarlıyoruz.</p></div>
+</article>
+<article class="service-card">
+<img src="../assets/atg-social-design-01-03.jpg" alt="Fitness markası için kampanya tasarımı" loading="lazy">
+<div class="service-card-copy"><span class="number">02 / HİZMET</span><h3>Hikâye ve Kampanya Tasarımı</h3><p>Duyurularınızı ve kampanyalarınızı öne çıkaran, ekranlarda güçlü görünen tasarımlar hazırlıyoruz.</p></div>
+</article>
+<article class="service-card">
+<img src="../assets/atg-social-design-01-04.jpg" alt="Giyim markası için reklam tasarımı" loading="lazy">
+<div class="service-card-copy"><span class="number">03 / HİZMET</span><h3>Marka İçerikleri</h3><p>Farklı mecralarda tutarlı görünen, markanızın karakterini yansıtan içerikler oluşturuyoruz.</p></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head">
+<div><span class="eyebrow">TASARIM PORTFÖYÜ</span><h2>Farklı markalar. <span class="gold">Farklı hikâyeler.</span></h2></div>
+<p>Örnek tasarımları yatay kaydırarak inceleyin. Telefonda parmağınızla kaydırabilir, okları da kullanabilirsiniz.</p>
+</div>
+
+<div class="portfolio-strip">
+<div class="portfolio-track" id="portfolioTrack">
+<article class="portfolio-slide"><img src="../assets/atg-social-design-01-01.jpg" alt="Restoran kampanya tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Kampanya</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy"><div class="portfolio-caption">Kahve / Gönderi</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-01-03.jpg" alt="Spor salonu tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Tanıtım</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-01-04.jpg" alt="Moda markası reklam tasarımı" loading="lazy"><div class="portfolio-caption">Moda / Reklam</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Seyahat / Kampanya</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-02-02.jpg" alt="Otomobil reklam tasarımı" loading="lazy"><div class="portfolio-caption">Otomotiv / Reklam</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-02-03.jpg" alt="Cilt bakım ürünü reklam tasarımı" loading="lazy"><div class="portfolio-caption">Bakım / Ürün</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-02-04.jpg" alt="Gayrimenkul tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Gayrimenkul / Tanıtım</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-01.jpg" alt="Burger restoranı menü tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Menü</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-02.jpg" alt="Otel kampanya tasarımı" loading="lazy"><div class="portfolio-caption">Otel / Sezon</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-03.jpg" alt="Fitness üyelik kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Kampanya</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-04.jpg" alt="Soğuk kahve tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">İçecek / Ürün</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-05.jpg" alt="Sezon indirimi tasarımı" loading="lazy"><div class="portfolio-caption">Moda / İndirim</div></article>
+<article class="portfolio-slide"><img src="../assets/atg-social-design-03-06.jpg" alt="Parfüm reklam tasarımı" loading="lazy"><div class="portfolio-caption">Parfüm / Reklam</div></article>
+</div>
+
+<div class="portfolio-controls">
+<div class="portfolio-dots" id="portfolioDots" aria-label="Galeri sayfaları"></div>
+<div class="portfolio-arrows">
+<button class="portfolio-arrow" id="portfolioPrev" aria-label="Önceki tasarım">‹</button>
+<button class="portfolio-arrow" id="portfolioNext" aria-label="Sonraki tasarım">›</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head">
+<div><span class="eyebrow">ÇALIŞMA SÜRECİ</span><h2>Net ihtiyaç. <span class="gold">Özenli teslim.</span></h2></div>
+<p>İşe başlamadan önce kapsamı, teslim formatını, revizyon beklentisini ve fiyatı karşılıklı olarak netleştiririz.</p>
+</div>
+<div class="steps">
+<div class="step"><small>01 / TANIŞMA</small><h3>İhtiyacı anlama</h3><p>Hedefinizi, beklentinizi ve kullanım alanını belirliyoruz.</p></div>
+<div class="step"><small>02 / TASARIM</small><h3>Görsel yön</h3><p>Markanıza uygun tasarım dilini oluşturup çalışmayı hazırlıyoruz.</p></div>
+<div class="step"><small>03 / TESLİM</small><h3>Son düzenlemeler</h3><p>Kararlaştırılan kapsam doğrultusunda dosyaları teslim ediyoruz.</p></div>
+</div>
+<div class="cta">
+<div><span class="eyebrow">ATG DIGITAL</span><h2>Sosyal medya tasarımınızı konuşalım.</h2><p>İhtiyacınızı kısaca anlatın, size uygun kapsamı birlikte belirleyelim.</p></div>
+<a class="btn primary" href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Instagram'dan ulaş ↗</a>
+</div>
+</div>
+</section>
 </main>
-<footer><div class="wrap"><div class="footer-top"><a class="brand" href="../index.html"><span class="brand-mark">ATG</span><span>ATG DIGITAL</span></a><nav class="footer-links"><a href="../index.html">Ana Sayfa</a><a href="hizmet-sosyal-medya.html">Social Media Design</a><a href="hizmet-tasarim.html">Graphic Design</a><a href="hizmet-video-reels.html">Video Production</a><a href="hizmet-reklam-kreatifleri.html">Advertising Creatives</a><a href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> ATG DIGITAL</span><span>YARATICI STÜDYO · TÜM HAKLARI SAKLIDIR</span></div></div></footer>
+
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<a class="brand" href="../index.html"><span class="brand-mark">ATG</span><span>ATG DIGITAL</span></a>
+<nav class="footer-links">
+<a href="../index.html">Ana Sayfa</a>
+<a href="hizmet-sosyal-medya.html">Social Media Design</a>
+<a href="hizmet-tasarim.html">Graphic Design</a>
+<a href="hizmet-video-reels.html">Video Production</a>
+<a href="hizmet-reklam-kreatifleri.html">Advertising Creatives</a>
+<a href="https://www.instagram.com/atg.digitall/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+</nav>
+</div>
+<div class="footer-bottom"><span>© <span data-year></span> ATG DIGITAL</span><span>YARATICI STÜDYO · TÜM HAKLARI SAKLIDIR</span></div>
+</div>
+</footer>
+
 <script>
-const m=document.getElementById('menu'),n=document.getElementById('navlinks');if(m&&n)m.addEventListener('click',()=>{let o=n.classList.toggle('open');m.setAttribute('aria-expanded',String(o));m.textContent=o?'×':'☰'});document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+const m=document.getElementById('menu'),n=document.getElementById('navlinks');
+if(m&&n)m.addEventListener('click',()=>{let o=n.classList.toggle('open');m.setAttribute('aria-expanded',String(o));m.textContent=o?'×':'☰'});
+document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+
 const track=document.getElementById('portfolioTrack'),dots=document.getElementById('portfolioDots');
-if(track&&dots){const slides=[...track.querySelectorAll('.portfolio-slide')];slides.forEach((s,i)=>{const b=document.createElement('button');b.className='portfolio-dot'+(i===0?' active':'');b.setAttribute('aria-label','Tasarıma git '+(i+1));b.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth',block:'nearest',inline:'start'}));dots.appendChild(b)});const update=()=>{let idx=0,dist=Infinity;slides.forEach((s,i)=>{const d=Math.abs(s.getBoundingClientRect().left-track.getBoundingClientRect().left);if(d<dist){dist=d;idx=i}});[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===idx))};track.addEventListener('scroll',()=>window.requestAnimationFrame(update));document.getElementById('portfolioPrev').addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:'smooth'}));document.getElementById('portfolioNext').addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:'smooth'}));}
+if(track&&dots){
+ const slides=[...track.querySelectorAll('.portfolio-slide')];
+ slides.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.className='portfolio-dot'+(i===0?' active':'');
+  b.setAttribute('aria-label','Tasarıma git '+(i+1));
+  b.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth',block:'nearest',inline:'start'}));
+  dots.appendChild(b);
+ });
+ const update=()=>{
+  let idx=0,dist=Infinity;
+  slides.forEach((s,i)=>{
+   const d=Math.abs(s.getBoundingClientRect().left-track.getBoundingClientRect().left);
+   if(d<dist){dist=d;idx=i}
+  });
+  [...dots.children].forEach((d,i)=>d.classList.toggle('active',i===idx));
+ };
+ track.addEventListener('scroll',()=>window.requestAnimationFrame(update));
+ document.getElementById('portfolioPrev').addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:'smooth'}));
+ document.getElementById('portfolioNext').addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:'smooth'}));
+}
 </script>
-</body></html>
+</body>
+</html>
+ 
