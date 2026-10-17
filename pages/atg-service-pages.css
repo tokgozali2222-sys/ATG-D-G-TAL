@@ -2,3 +2,54 @@
 :root{--bg:#080808;--panel:#11110f;--gold:#d6ad45;--gold2:#f1d889;--white:#f7f5f0;--muted:#aaa69d;--line:rgba(214,173,69,.25);--max:1160px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.65 'DM Sans',sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-.04em;margin:0}h1{font-size:clamp(2.7rem,7vw,5.7rem);font-weight:800}h2{font-size:clamp(1.9rem,4.5vw,3.2rem)}h3{font-size:1.22rem}p{color:var(--muted)}.gold{color:var(--gold)}.eyebrow{font-size:.72rem;color:var(--gold2);letter-spacing:.2em;font-weight:700;text-transform:uppercase}.eyebrow:before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);vertical-align:middle;margin-right:10px}.topbar{position:sticky;top:0;z-index:20;background:#080808ed;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font:800 .9rem Manrope,sans-serif;letter-spacing:.12em}.brand-mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:11px;display:grid;place-items:center;color:var(--gold);font-size:.78rem}.navlinks{display:flex;gap:22px;align-items:center;font-size:.84rem;color:#ddd7ca}.navlinks a:hover,.footer-links a:hover{color:var(--gold2)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:99px;border:1px solid var(--line);font-size:.86rem;font-weight:700;transition:.2s}.navcta{color:var(--gold2)}.btn.primary{background:var(--gold);color:#111;border-color:var(--gold)}.btn.secondary{color:var(--gold2)}.btn:hover,.navcta:hover{transform:translateY(-2px)}.menu{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:10px;padding:8px 12px}.hero{padding:68px 0 58px;background:radial-gradient(ellipse at 84% 35%,#d6ad451c,transparent 38%),linear-gradient(120deg,#080808,#100e09)}.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:42px;align-items:center}.hero .eyebrow{display:block;margin-bottom:22px}.hero h1 span{display:block;color:var(--gold)}.hero-copy>p{max-width:560px;font-size:1.04rem;margin:22px 0 26px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-art{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#10100e;position:relative;min-height:360px}.hero-art img{width:100%;height:100%;min-height:360px;object-fit:cover;opacity:.9}.hero-art:after{content:'ATG DIGITAL  /  ÖZGÜN TASARIM';position:absolute;left:18px;bottom:16px;color:#f1d889;background:#080808b8;padding:6px 9px;border:1px solid #d6ad4540;font-size:.63rem;letter-spacing:.16em}.section{padding:66px 0;border-top:1px solid #ffffff10}.section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:26px}.section-head h2{margin-top:12px}.section-head p{max-width:450px;margin:0}.service-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.service-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#14130f,#0d0d0c)}.service-card img{width:100%;height:220px;object-fit:cover;border-bottom:1px solid var(--line)}.service-card-copy{padding:20px}.number{color:var(--gold2);font-size:.7rem;letter-spacing:.18em}.service-card h3{margin:12px 0 8px}.service-card p{font-size:.91rem;margin:0}.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}.gallery img{width:100%;height:100%;min-height:290px;object-fit:cover;border:1px solid var(--line);border-radius:15px}.gallery-copy{border:1px solid var(--line);border-radius:15px;padding:28px;background:radial-gradient(ellipse at 100% 0%,#d6ad451a,transparent 40%),#10100e}.list{padding:0;list-style:none}.list li{padding:10px 0;border-bottom:1px solid #ffffff10;color:#ddd7ca}.list li:before{content:'↗';color:var(--gold);margin-right:10px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{border-top:1px solid var(--line);padding:17px 4px}.step small{color:var(--gold2);letter-spacing:.15em}.step h3{margin:13px 0 8px}.step p{font-size:.88rem}.cta{margin:38px 0 12px;padding:30px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(ellipse at 90% 10%,#d6ad4520,transparent 42%),#111;display:flex;align-items:center;justify-content:space-between;gap:22px}.cta p{margin-bottom:0}.cta h2{margin-top:10px}.footer-top,.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:18px}.footer-links{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:#d7d2c8}footer{border-top:1px solid #ffffff12;padding:26px 0}.footer-bottom{border-top:1px solid #ffffff10;padding-top:15px;margin-top:20px;color:#777;font-size:.7rem;letter-spacing:.08em}.backlink{display:inline-block;color:var(--gold2);font-size:.82rem;margin-bottom:22px}.notice{border:1px solid #d6ad4540;background:#11100c;border-radius:14px;padding:16px 18px;color:#d9d0bd;font-size:.88rem}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:6px 10px;color:var(--gold2);font-size:.7rem;letter-spacing:.1em}
 @media(max-width:850px){.hero-grid,.gallery{grid-template-columns:1fr}.hero-art,.hero-art img{min-height:280px}.navlinks{gap:12px;font-size:.78rem}.navcta{display:none}.service-list{grid-template-columns:1fr 1fr}.gallery img{min-height:250px}}
 @media(max-width:640px){.wrap{width:calc(100% - 32px)}.nav{height:66px}.navlinks{display:none;position:absolute;top:66px;left:16px;right:16px;padding:12px;background:#111;border:1px solid var(--line);border-radius:14px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:9px 4px;border-bottom:1px solid #ffffff0c}.menu{display:block}.hero{padding:46px 0}.hero-art,.hero-art img{min-height:230px}.section{padding:48px 0}.section-head{align-items:flex-start;flex-direction:column}.service-list,.steps{grid-template-columns:1fr}.service-card img{height:230px}.gallery-copy{padding:22px}.cta{align-items:flex-start;flex-direction:column;padding:22px}.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}}
+
+/* ATG DIGITAL: mobil görsel ve gönderi düzenlemesi */
+.service-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #080808;
+}
+
+.hero-art {
+  min-width: 0;
+}
+
+.hero-art img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .service-card img {
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero-art,
+  .hero-art img {
+    min-height: 0;
+  }
+
+  .hero-art img {
+    max-height: 380px;
+  }
+
+  .gallery img {
+    max-height: 380px;
+  }
+}
+ 
