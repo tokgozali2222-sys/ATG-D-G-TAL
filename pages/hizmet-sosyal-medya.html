@@ -5,25 +5,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080808">
-<meta name="description" content="Markanızın tarzını yansıtan, dikkat çeken sosyal medya tasarımları hazırlıyoruz.">
+<meta name="description" content="Markanız için profesyonel sosyal medya gönderileri, hikâyeler ve reklam tasarımları.">
 <title>Social Media Design | ATG DIGITAL</title>
 <link rel="stylesheet" href="atg-service-pages.css">
 <style>
-.portfolio-strip{overflow:hidden;margin-top:28px}
-.portfolio-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.portfolio-slide{flex:0 0 min(78%,330px);scroll-snap-align:start;border:1px solid rgba(214,173,69,.42);border-radius:16px;overflow:hidden;background:#0d0d0d}
-.portfolio-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#080808}
-.portfolio-caption{padding:13px 15px;color:#d6ad45;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
-.portfolio-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
-.portfolio-arrows{display:flex;gap:8px}
-.portfolio-arrow{border:1px solid rgba(214,173,69,.5);background:#111;color:#f5f0e6;border-radius:50%;width:42px;height:42px;font-size:20px;cursor:pointer}
-.portfolio-dots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.portfolio-dot{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#575149;cursor:pointer}
-.portfolio-dot.active{background:#d6ad45;transform:scale(1.25)}
-@media(min-width:760px){.portfolio-slide{flex-basis:270px}}
+/* Hizmet galerileri */
+.service-gallery{margin-top:22px;min-width:0}
+.gallery-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:3px 2px 13px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#d6ad45 #171717}
+.gallery-slide{flex:0 0 min(72%,260px);scroll-snap-align:start;overflow:hidden;border:1px solid rgba(214,173,69,.38);border-radius:14px;background:#0b0b0b}
+.gallery-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#080808}
+.gallery-caption{padding:11px 13px;color:#d6ad45;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px}
+.gallery-dots{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.gallery-dot{width:7px;height:7px;flex:0 0 7px;padding:0;border:0;border-radius:50%;background:#575149;cursor:pointer}
+.gallery-dot.active{background:#d6ad45;transform:scale(1.3)}
+.gallery-arrows{display:flex;gap:8px}
+.gallery-arrow{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(214,173,69,.5);border-radius:50%;background:#111;color:#f5f0e6;font-size:22px;cursor:pointer}
+.gallery-arrow:hover{background:#d6ad45;color:#080808}
+.service-card{min-width:0;overflow:hidden}
+.service-card-copy{min-width:0}
+@media(min-width:760px){
+ .gallery-slide{flex-basis:240px}
+}
+@media(max-width:480px){
+ .gallery-slide{flex-basis:76%}
+ .gallery-controls{margin-top:6px}
+}
 </style>
 </head>
 <body>
+
 <header class="topbar">
 <div class="wrap nav">
 <a class="brand" href="../index.html" aria-label="ATG Digital ana sayfa"><span class="brand-mark">ATG</span><span>ATG DIGITAL</span></a>
@@ -64,55 +75,82 @@
 <div><span class="eyebrow">HİZMETLERİMİZ</span><h2>İhtiyacınıza uygun <span class="gold">çözümler.</span></h2></div>
 <p>Her tasarımı markanızın ihtiyacına, hedef kitlesine ve kullanılacağı mecraya göre ele alıyoruz.</p>
 </div>
+
 <div class="service-list">
-<article class="service-card">
-<img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası için sosyal medya tasarımı" loading="lazy">
-<div class="service-card-copy"><span class="number">01 / HİZMET</span><h3>Gönderi Tasarımı</h3><p>Instagram hesabınız için markanıza özel, dikkat çekici ve profesyonel gönderiler tasarlıyoruz.</p></div>
-</article>
-<article class="service-card">
-<img src="../assets/atg-social-design-01-03.jpg" alt="Fitness markası için kampanya tasarımı" loading="lazy">
-<div class="service-card-copy"><span class="number">02 / HİZMET</span><h3>Hikâye ve Kampanya Tasarımı</h3><p>Duyurularınızı ve kampanyalarınızı öne çıkaran, ekranlarda güçlü görünen tasarımlar hazırlıyoruz.</p></div>
-</article>
-<article class="service-card">
-<img src="../assets/atg-social-design-01-04.jpg" alt="Giyim markası için reklam tasarımı" loading="lazy">
-<div class="service-card-copy"><span class="number">03 / HİZMET</span><h3>Marka İçerikleri</h3><p>Farklı mecralarda tutarlı görünen, markanızın karakterini yansıtan içerikler oluşturuyoruz.</p></div>
-</article>
-</div>
-</div>
-</section>
 
-<section class="section">
-<div class="wrap">
-<div class="section-head">
-<div><span class="eyebrow">TASARIM PORTFÖYÜ</span><h2>Farklı markalar. <span class="gold">Farklı hikâyeler.</span></h2></div>
-<p>Örnek tasarımları yatay kaydırarak inceleyin. Telefonda parmağınızla kaydırabilir, okları da kullanabilirsiniz.</p>
+<article class="service-card">
+<div class="service-card-copy">
+<span class="number">01 / HİZMET</span>
+<h3>Gönderi Tasarımı</h3>
+<p>Instagram hesabınız için markanıza özel, dikkat çekici ve profesyonel gönderiler tasarlıyoruz.</p>
 </div>
+<div class="service-gallery" data-gallery>
+<div class="gallery-track">
+<article class="gallery-slide"><img src="../assets/atg-social-design-01-01.jpg" alt="Restoran gönderi tasarımı" loading="lazy"><div class="gallery-caption">Restoran / Kampanya</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy"><div class="gallery-caption">Kahve / Gönderi</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat markası gönderi tasarımı" loading="lazy"><div class="gallery-caption">Seyahat / Tanıtım</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-01.jpg" alt="Restoran menü tasarımı" loading="lazy"><div class="gallery-caption">Restoran / Menü</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-04.jpg" alt="İçecek ürünü gönderi tasarımı" loading="lazy"><div class="gallery-caption">İçecek / Ürün</div></article>
+</div>
+<div class="gallery-controls">
+<div class="gallery-dots" aria-label="Gönderi tasarımları"></div>
+<div class="gallery-arrows">
+<button class="gallery-arrow prev" aria-label="Önceki tasarım">‹</button>
+<button class="gallery-arrow next" aria-label="Sonraki tasarım">›</button>
+</div>
+</div>
+</div>
+</article>
 
-<div class="portfolio-strip">
-<div class="portfolio-track" id="portfolioTrack">
-<article class="portfolio-slide"><img src="../assets/atg-social-design-01-01.jpg" alt="Restoran kampanya tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy"><div class="portfolio-caption">Kahve / Gönderi</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-01-03.jpg" alt="Spor salonu tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Tanıtım</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-01-04.jpg" alt="Moda markası reklam tasarımı" loading="lazy"><div class="portfolio-caption">Moda / Reklam</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Seyahat / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-02-02.jpg" alt="Otomobil reklam tasarımı" loading="lazy"><div class="portfolio-caption">Otomotiv / Reklam</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-02-03.jpg" alt="Cilt bakım ürünü reklam tasarımı" loading="lazy"><div class="portfolio-caption">Bakım / Ürün</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-02-04.jpg" alt="Gayrimenkul tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">Gayrimenkul / Tanıtım</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-01.jpg" alt="Burger restoranı menü tasarımı" loading="lazy"><div class="portfolio-caption">Restoran / Menü</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-02.jpg" alt="Otel kampanya tasarımı" loading="lazy"><div class="portfolio-caption">Otel / Sezon</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-03.jpg" alt="Fitness üyelik kampanyası tasarımı" loading="lazy"><div class="portfolio-caption">Fitness / Kampanya</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-04.jpg" alt="Soğuk kahve tanıtım tasarımı" loading="lazy"><div class="portfolio-caption">İçecek / Ürün</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-05.jpg" alt="Sezon indirimi tasarımı" loading="lazy"><div class="portfolio-caption">Moda / İndirim</div></article>
-<article class="portfolio-slide"><img src="../assets/atg-social-design-03-06.jpg" alt="Parfüm reklam tasarımı" loading="lazy"><div class="portfolio-caption">Parfüm / Reklam</div></article>
+<article class="service-card">
+<div class="service-card-copy">
+<span class="number">02 / HİZMET</span>
+<h3>Hikâye ve Kampanya Tasarımı</h3>
+<p>Duyurularınızı ve kampanyalarınızı öne çıkaran, ekranlarda güçlü görünen tasarımlar hazırlıyoruz.</p>
 </div>
+<div class="service-gallery" data-gallery>
+<div class="gallery-track">
+<article class="gallery-slide"><img src="../assets/atg-social-design-01-03.jpg" alt="Fitness kampanya tasarımı" loading="lazy"><div class="gallery-caption">Fitness / Kampanya</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-01-04.jpg" alt="Moda reklam tasarımı" loading="lazy"><div class="gallery-caption">Moda / Reklam</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-02.jpg" alt="Otomotiv reklam tasarımı" loading="lazy"><div class="gallery-caption">Otomotiv / Reklam</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-04.jpg" alt="Gayrimenkul kampanya tasarımı" loading="lazy"><div class="gallery-caption">Gayrimenkul / Tanıtım</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-03.jpg" alt="Fitness üyelik kampanyası" loading="lazy"><div class="gallery-caption">Fitness / Üyelik</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-05.jpg" alt="Sezon indirimi tasarımı" loading="lazy"><div class="gallery-caption">Moda / İndirim</div></article>
+</div>
+<div class="gallery-controls">
+<div class="gallery-dots" aria-label="Kampanya tasarımları"></div>
+<div class="gallery-arrows">
+<button class="gallery-arrow prev" aria-label="Önceki tasarım">‹</button>
+<button class="gallery-arrow next" aria-label="Sonraki tasarım">›</button>
+</div>
+</div>
+</div>
+</article>
 
-<div class="portfolio-controls">
-<div class="portfolio-dots" id="portfolioDots" aria-label="Galeri sayfaları"></div>
-<div class="portfolio-arrows">
-<button class="portfolio-arrow" id="portfolioPrev" aria-label="Önceki tasarım">‹</button>
-<button class="portfolio-arrow" id="portfolioNext" aria-label="Sonraki tasarım">›</button>
+<article class="service-card">
+<div class="service-card-copy">
+<span class="number">03 / HİZMET</span>
+<h3>Marka İçerikleri</h3>
+<p>Farklı mecralarda tutarlı görünen, markanızın karakterini yansıtan içerikler oluşturuyoruz.</p>
+</div>
+<div class="service-gallery" data-gallery>
+<div class="gallery-track">
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-03.jpg" alt="Cilt bakım ürünü tasarımı" loading="lazy"><div class="gallery-caption">Bakım / Ürün</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-02.jpg" alt="Otel sezon tanıtımı" loading="lazy"><div class="gallery-caption">Otel / Sezon</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-03-06.jpg" alt="Parfüm reklam tasarımı" loading="lazy"><div class="gallery-caption">Parfüm / Reklam</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat marka içeriği" loading="lazy"><div class="gallery-caption">Seyahat / Marka</div></article>
+<article class="gallery-slide"><img src="../assets/atg-social-design-02-02.jpg" alt="Otomotiv marka içeriği" loading="lazy"><div class="gallery-caption">Otomotiv / İçerik</div></article>
+</div>
+<div class="gallery-controls">
+<div class="gallery-dots" aria-label="Marka içerikleri"></div>
+<div class="gallery-arrows">
+<button class="gallery-arrow prev" aria-label="Önceki tasarım">‹</button>
+<button class="gallery-arrow next" aria-label="Sonraki tasarım">›</button>
 </div>
 </div>
+</div>
+</article>
+
 </div>
 </div>
 </section>
@@ -154,33 +192,54 @@
 </footer>
 
 <script>
-const m=document.getElementById('menu'),n=document.getElementById('navlinks');
-if(m&&n)m.addEventListener('click',()=>{let o=n.classList.toggle('open');m.setAttribute('aria-expanded',String(o));m.textContent=o?'×':'☰'});
-document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
-
-const track=document.getElementById('portfolioTrack'),dots=document.getElementById('portfolioDots');
-if(track&&dots){
- const slides=[...track.querySelectorAll('.portfolio-slide')];
- slides.forEach((s,i)=>{
-  const b=document.createElement('button');
-  b.className='portfolio-dot'+(i===0?' active':'');
-  b.setAttribute('aria-label','Tasarıma git '+(i+1));
-  b.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth',block:'nearest',inline:'start'}));
-  dots.appendChild(b);
+const menuButton=document.getElementById('menu');
+const navLinks=document.getElementById('navlinks');
+if(menuButton&&navLinks){
+ menuButton.addEventListener('click',()=>{
+  const opened=navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded',String(opened));
+  menuButton.textContent=opened?'×':'☰';
  });
- const update=()=>{
-  let idx=0,dist=Infinity;
-  slides.forEach((s,i)=>{
-   const d=Math.abs(s.getBoundingClientRect().left-track.getBoundingClientRect().left);
-   if(d<dist){dist=d;idx=i}
-  });
-  [...dots.children].forEach((d,i)=>d.classList.toggle('active',i===idx));
- };
- track.addEventListener('scroll',()=>window.requestAnimationFrame(update));
- document.getElementById('portfolioPrev').addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:'smooth'}));
- document.getElementById('portfolioNext').addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:'smooth'}));
 }
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+
+document.querySelectorAll('[data-gallery]').forEach(gallery=>{
+ const track=gallery.querySelector('.gallery-track');
+ const slides=[...track.querySelectorAll('.gallery-slide')];
+ const dots=gallery.querySelector('.gallery-dots');
+ const prev=gallery.querySelector('.prev');
+ const next=gallery.querySelector('.next');
+
+ slides.forEach((slide,index)=>{
+  const dot=document.createElement('button');
+  dot.className='gallery-dot'+(index===0?' active':'');
+  dot.setAttribute('aria-label','Görsel '+(index+1));
+  dot.addEventListener('click',()=>{
+   slide.scrollIntoView({behavior:'smooth',block:'nearest',inline:'start'});
+  });
+  dots.appendChild(dot);
+ });
+
+ const updateDots=()=>{
+  let activeIndex=0;
+  let closestDistance=Infinity;
+  const trackLeft=track.getBoundingClientRect().left;
+  slides.forEach((slide,index)=>{
+   const distance=Math.abs(slide.getBoundingClientRect().left-trackLeft);
+   if(distance<closestDistance){
+    closestDistance=distance;
+    activeIndex=index;
+   }
+  });
+  [...dots.children].forEach((dot,index)=>{
+   dot.classList.toggle('active',index===activeIndex);
+  });
+ };
+
+ track.addEventListener('scroll',()=>window.requestAnimationFrame(updateDots));
+ prev.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:'smooth'}));
+ next.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:'smooth'}));
+});
 </script>
 </body>
 </html>
- 
