@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="tr">
 <head>
@@ -11,114 +10,59 @@
 <link rel="stylesheet" href="atg-service-pages.css">
 
 <style>
-/* Galeri ana yapısı */
 .service-gallery{margin-top:22px;min-width:0}
 .gallery-track{
- display:flex;
- gap:14px;
- overflow-x:auto;
- scroll-snap-type:x mandatory;
- scroll-behavior:smooth;
- padding:3px 2px 13px;
- -webkit-overflow-scrolling:touch;
- scrollbar-width:thin;
- scrollbar-color:#d6ad45 #171717
+ display:flex;gap:14px;overflow-x:auto;
+ scroll-snap-type:x mandatory;scroll-behavior:smooth;
+ padding:3px 2px 13px;-webkit-overflow-scrolling:touch;
+ scrollbar-width:thin;scrollbar-color:#d6ad45 #171717
 }
 .gallery-slide{
- flex:0 0 min(76%,300px);
- min-width:0;
- scroll-snap-align:start;
- overflow:hidden;
+ flex:0 0 min(76%,300px);min-width:0;
+ scroll-snap-align:start;overflow:hidden;
  border:1px solid rgba(214,173,69,.38);
- border-radius:14px;
- background:#0b0b0b
+ border-radius:14px;background:#0b0b0b
 }
 .gallery-slide img{
- display:block;
- width:100%;
- height:auto;
- object-fit:contain;
- object-position:center;
- background:#080808
+ display:block;width:100%;height:auto;
+ object-fit:contain;object-position:center;background:#080808
 }
 .gallery-caption{
- padding:11px 13px;
- color:#d6ad45;
- font-size:.78rem;
- letter-spacing:.06em;
- text-transform:uppercase
+ padding:11px 13px;color:#d6ad45;font-size:.78rem;
+ letter-spacing:.06em;text-transform:uppercase
 }
 .gallery-controls{
- display:flex;
- align-items:center;
- justify-content:space-between;
- gap:12px;
- margin-top:8px
+ display:flex;align-items:center;justify-content:space-between;
+ gap:12px;margin-top:8px
 }
-.gallery-dots{
- display:flex;
- gap:7px;
- align-items:center;
- flex-wrap:wrap
-}
+.gallery-dots{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
 .gallery-dot{
- width:7px;
- height:7px;
- flex:0 0 7px;
- padding:0;
- border:0;
- border-radius:50%;
- background:#575149;
- cursor:pointer
+ width:7px;height:7px;flex:0 0 7px;padding:0;border:0;
+ border-radius:50%;background:#575149;cursor:pointer
 }
-.gallery-dot.active{
- background:#d6ad45;
- transform:scale(1.3)
-}
+.gallery-dot.active{background:#d6ad45;transform:scale(1.3)}
 .gallery-arrows{display:flex;gap:8px}
 .gallery-arrow{
- display:grid;
- place-items:center;
- width:38px;
- height:38px;
- border:1px solid rgba(214,173,69,.5);
- border-radius:50%;
- background:#111;
- color:#f5f0e6;
- font-size:22px;
- cursor:pointer
+ display:grid;place-items:center;width:38px;height:38px;
+ border:1px solid rgba(214,173,69,.5);border-radius:50%;
+ background:#111;color:#f5f0e6;font-size:22px;cursor:pointer
 }
 .gallery-arrow:hover{background:#d6ad45;color:#080808}
 .service-card{min-width:0;overflow:hidden}
 .service-card-copy{min-width:0}
 
-/* 1. Instagram gönderileri: 4:5 dikey */
-.service-gallery[data-kind="post"] .gallery-slide{
- flex-basis:min(76%,300px)
-}
+.service-gallery[data-kind="post"] .gallery-slide{flex-basis:min(76%,300px)}
 .service-gallery[data-kind="post"] .gallery-slide img{
- aspect-ratio:4/5;
- object-fit:contain
+ aspect-ratio:4/5;object-fit:contain
 }
-
-/* 2. Instagram Story: 9:16 dikey */
-.service-gallery[data-kind="story"] .gallery-slide{
- flex-basis:min(58%,230px)
-}
+.service-gallery[data-kind="story"] .gallery-slide{flex-basis:min(58%,230px)}
 .service-gallery[data-kind="story"] .gallery-slide img{
- aspect-ratio:9/16;
- object-fit:contain
+ aspect-ratio:9/16;object-fit:contain
 }
-
-/* 3. Reklam ve marka içerikleri */
-.service-gallery[data-kind="ads"] .gallery-slide{
- flex-basis:min(80%,340px)
-}
+.service-gallery[data-kind="ads"] .gallery-slide{flex-basis:min(80%,340px)}
 .service-gallery[data-kind="ads"] .gallery-slide img{
- aspect-ratio:4/5;
- object-fit:contain
+ aspect-ratio:4/5;object-fit:contain
 }
-
 @media(min-width:760px){
  .service-gallery[data-kind="post"] .gallery-slide{flex-basis:260px}
  .service-gallery[data-kind="story"] .gallery-slide{flex-basis:220px}
@@ -187,24 +131,28 @@
 <div class="service-gallery" data-gallery data-kind="post">
 <div class="gallery-track">
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-01-01.jpg" alt="Restoran gönderi tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-post-01.jpg" alt="Restoran gönderi tasarımı" loading="lazy">
 <div class="gallery-caption">Restoran / Kampanya</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-01-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-post-02.jpg" alt="Kahve markası gönderi tasarımı" loading="lazy">
 <div class="gallery-caption">Kahve / Gönderi</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat markası gönderi tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-post-03.jpg" alt="Seyahat markası gönderi tasarımı" loading="lazy">
 <div class="gallery-caption">Seyahat / Tanıtım</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-03-01.jpg" alt="Restoran menü tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-post-04.jpg" alt="Restoran menü tasarımı" loading="lazy">
 <div class="gallery-caption">Restoran / Menü</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-03-04.jpg" alt="İçecek ürünü gönderi tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-post-05.jpg" alt="İçecek ürünü gönderi tasarımı" loading="lazy">
 <div class="gallery-caption">İçecek / Ürün</div>
+</article>
+<article class="gallery-slide">
+<img src="../assets/atg-social-design-post-06.jpg" alt="Ek sosyal medya gönderi tasarımı" loading="lazy">
+<div class="gallery-caption">Marka / Gönderi</div>
 </article>
 </div>
 <div class="gallery-controls">
@@ -227,24 +175,32 @@
 <div class="service-gallery" data-gallery data-kind="story">
 <div class="gallery-track">
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-01-03.jpg" alt="Kampanya sosyal medya tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-story-01.jpg" alt="Kampanya sosyal medya tasarımı" loading="lazy">
 <div class="gallery-caption">Kampanya / Story</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-01-04.jpg" alt="Moda markası sosyal medya tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-story-02.jpg" alt="Moda markası sosyal medya tasarımı" loading="lazy">
 <div class="gallery-caption">Moda / Duyuru</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-02-04.jpg" alt="Gayrimenkul tanıtım tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-story-03.jpg" alt="Gayrimenkul tanıtım tasarımı" loading="lazy">
 <div class="gallery-caption">Gayrimenkul / Tanıtım</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-03-03.jpg" alt="Fitness kampanya tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-story-04.jpg" alt="Fitness kampanya tasarımı" loading="lazy">
 <div class="gallery-caption">Fitness / Kampanya</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-03-05.jpg" alt="Sezon indirimi tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-story-05.jpg" alt="Sezon indirimi tasarımı" loading="lazy">
 <div class="gallery-caption">Moda / İndirim</div>
+</article>
+<article class="gallery-slide">
+<img src="../assets/atg-social-design-story-06.jpg" alt="Ek Instagram hikâye tasarımı" loading="lazy">
+<div class="gallery-caption">Marka / Story</div>
+</article>
+<article class="gallery-slide">
+<img src="../assets/atg-social-design-story-07.jpg" alt="Ek kampanya hikâye tasarımı" loading="lazy">
+<div class="gallery-caption">Kampanya / Duyuru</div>
 </article>
 </div>
 <div class="gallery-controls">
@@ -267,24 +223,16 @@
 <div class="service-gallery" data-gallery data-kind="ads">
 <div class="gallery-track">
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-02-02.jpg" alt="Otomotiv reklam tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-ad-01.jpg" alt="Otomotiv reklam tasarımı" loading="lazy">
 <div class="gallery-caption">Otomotiv / Reklam</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-02-03.jpg" alt="Cilt bakım ürünü reklam tasarımı" loading="lazy">
+<img src="../assets/atg-social-design-ad-02.jpg" alt="Cilt bakım ürünü reklam tasarımı" loading="lazy">
 <div class="gallery-caption">Bakım / Ürün</div>
 </article>
 <article class="gallery-slide">
-<img src="../assets/atg-social-design-03-02.jpg" alt="Otel kampanya tasarımı" loading="lazy">
-<div class="gallery-caption">Otel / Sezon</div>
-</article>
-<article class="gallery-slide">
-<img src="../assets/atg-social-design-03-06.jpg" alt="Parfüm reklam tasarımı" loading="lazy">
-<div class="gallery-caption">Parfüm / Reklam</div>
-</article>
-<article class="gallery-slide">
-<img src="../assets/atg-social-design-02-01.jpg" alt="Seyahat marka içeriği" loading="lazy">
-<div class="gallery-caption">Seyahat / Marka</div>
+<img src="../assets/atg-social-design-ad-03.jpg" alt="İşletme tanıtım reklam tasarımı" loading="lazy">
+<div class="gallery-caption">İşletme / Tanıtım</div>
 </article>
 </div>
 <div class="gallery-controls">
