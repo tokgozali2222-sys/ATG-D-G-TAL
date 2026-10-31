@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tokgozali2222-sys.github.io/ATG-D-G-TAL/sitemap.xml
